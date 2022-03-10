@@ -1,0 +1,7 @@
+grant{
+permission javax.security.auth.AuthPermission "createLoginContext.Login1";
+permission javax.security.auth.AuthPermission "doAsPrivileged";
+};
+grant principal com.sun.security.auth.UserPrincipal "test_user" {
+    permission com.lessons.security.ResourcePermission "secure-bank-deposit";
+};
