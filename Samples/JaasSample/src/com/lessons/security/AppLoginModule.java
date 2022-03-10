@@ -36,7 +36,7 @@ public class AppLoginModule implements LoginModule {
 	public boolean login() throws LoginException {
 		// Define callback array to pass to handle method of AppCallbackHandler
 		Callback[] callback_array = new Callback[2];
-		callback_array[0] = new NameCallback("What is your username:");
+		callback_array[0] = new NameCallback("What is your unesername:");
 		callback_array[1] = new PasswordCallback("Enter your password:", false);
 		try {
 			this.callbackHandler.handle(callback_array);
